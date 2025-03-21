@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+
+
+
+<link href="/_static/css/banner-styles.css?v=omkqRugM" rel="stylesheet" type="text/css"/>
+<link href="/_static/css/iconochive.css?v=qtvMKcIJ" rel="stylesheet" type="text/css"/>
+<!-- End Wayback Rewrite JS Include -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Avoiding and Going After Tail Events</title>
+
+<link href="//web.archive.org/web/20200923212053/https://platform-api.sharethis.com/" rel="dns-prefetch"/>
+<link href="//web.archive.org/web/20200923212053/https://fonts.googleapis.com/" rel="dns-prefetch"/>
+<link href="//web.archive.org/web/20200923212053/https://s.w.org/" rel="dns-prefetch"/>
+<link href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/feed/" rel="alternate" title=" » Feed" type="application/rss+xml"/>
+<link href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/comments/feed/" rel="alternate" title=" » Comments Feed" type="application/rss+xml"/>
+<link href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/feed/" rel="alternate" title=" » Avoiding and Going After Tail Events Comments Feed" type="application/rss+xml"/>
+<link href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/" rel="canonical"/>
+
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link href="https://web.archive.org/web/20200923212053cs_/https://wallstreetplayboys.com/wp-content/themes/generate-pro/style.css?ver=2.1" id="generate-pro-theme-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://web.archive.org/web/20200923212053cs_/https://wallstreetplayboys.com/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://web.archive.org/web/20200923212053cs_/https://wallstreetplayboys.com/wp-content/plugins/rotatingtweets/css/style.css?ver=5.5.1" id="rotatingtweets-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://web.archive.org/web/20200923212053cs_/https://wallstreetplayboys.com/wp-includes/css/dashicons.min.css?ver=5.5.1" id="dashicons-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="//web.archive.org/web/20200923212053cs_/https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C600&amp;ver=2.1" id="google-font-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://web.archive.org/web/20200923212053cs_/https://wallstreetplayboys.com/wp-content/themes/generate-pro/style.css?ver=1.0" id="themename-style-css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://web.archive.org/web/20200923212053cs_/https://wallstreetplayboys.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.15" id="addtoany-css" media="all" rel="stylesheet" type="text/css"/>
+<style id="addtoany-inline-css" type="text/css">
+.addtoany_share_save_container { text-align:center; }
+</style>
+
+
+
+
+
+
+
+
+<link href="https://wallstreetplayboys.com/wp-json/" rel="https://api.w.org/"/><link href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/wp-json/wp/v2/posts/17181" rel="alternate" type="application/json"/><link href="https://wallstreetplayboys.com/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+<link href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwallstreetplayboys.com%2Favoiding-and-going-after-tail-events%2F" rel="alternate" type="application/json+oembed"/>
+<link href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwallstreetplayboys.com%2Favoiding-and-going-after-tail-events%2F&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+
+
+<style type="text/css"> .enews .screenread {
+	height: 1px;
+    left: -1000em;
+    overflow: hidden;
+    position: absolute;
+    top: -1000em;
+    width: 1px; } </style><link href="https://web.archive.org/web/20200923212053cs_/https://wallstreetplayboys.com/wp-content/plugins/latest-twitter-sidebar-widget/latest_twitter_widget.css" rel="stylesheet" type="text/css"/>
+<meta content="" http-equiv="Content-Security-Policy"/>
+<link href="https://web.archive.org/web/20200923212053im_/https://wallstreetplayboys.com/wp-content/themes/generate-pro/images/favicon.ico" rel="icon"/>
+<link href="https://wallstreetplayboys.com/xmlrpc.php" rel="pingback"/>
+<style type="text/css">.site-title a { background: url(https://web.archive.org/web/20200923212053im_/https://wallstreetplayboys.com/wp-content/uploads/2015/02/cropped-smaller2.png) no-repeat !important; }</style>
+
+<style id="custom-background-css" type="text/css">
+body.custom-background { background-color: #ffffff; }
+</style>
+</head>
+<body class="post-template-default single single-post postid-17181 single-format-standard custom-background custom-header header-image content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-hidden generate-pro-blue" itemscope="" itemtype="https://schema.org/WebPage"><div class="site-container"><header class="site-header" itemscope="" itemtype="https://schema.org/WPHeader"><div class="wrap"><div class="title-area"><p class="site-title" itemprop="headline"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/"></a></p><p class="site-description" itemprop="description">Wall Street Playboys - Advice from Real Wall Street Professionals</p></div><div class="widget-area header-widget-area"><section class="widget widget_search" id="search-2"><div class="widget-wrap"><form action="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/" class="search-form" itemprop="potentialAction" itemscope="" itemtype="https://schema.org/SearchAction" method="get" role="search"><input class="search-form-input" id="searchform-1" itemprop="query-input" name="s" placeholder="Search this website" type="search"/><input class="search-form-submit" type="submit" value="Search"/><meta content="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/?s={s}" itemprop="target"/></form></div></section>
+</div></div></header><nav aria-label="Main" class="nav-primary" itemscope="" itemtype="https://schema.org/SiteNavigationElement"><div class="wrap"><ul class="menu genesis-nav-menu menu-primary" id="menu-order"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1809" id="menu-item-1809"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/start-here/" itemprop="url"><span itemprop="name">* Start Here *</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" id="menu-item-1843"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/approved-products/" itemprop="url"><span itemprop="name">Approved Products</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1808" id="menu-item-1808"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/frequently-asked-questions/" itemprop="url"><span itemprop="name">FAQ</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1807" id="menu-item-1807"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/interview-qa-investment-banking/" itemprop="url"><span itemprop="name">IB Interview</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2419" id="menu-item-2419"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/top-posts/" itemprop="url"><span itemprop="name">Top Posts</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3494" id="menu-item-3494"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/efficiency/" itemprop="url"><span itemprop="name">Efficiency</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3797" id="menu-item-3797"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/triangle-investing/" itemprop="url"><span itemprop="name">Triangle Investing</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17026" id="menu-item-17026"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/spending/" itemprop="url"><span itemprop="name">Spending</span></a></li>
+</ul></div></nav><div class="site-inner"><div class="content-sidebar-wrap"><main class="content"><article class="post-17181 post type-post status-publish format-standard has-post-thumbnail category-personal-finance entry" itemscope="" itemtype="https://schema.org/CreativeWork"><header class="entry-header"><p class="entry-meta"><time class="entry-time" datetime="2020-06-08T14:22:41-04:00" itemprop="datePublished">June 8, 2020</time> by <span class="entry-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><a class="entry-author-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/author/WSP9876/" itemprop="url" rel="author"><span class="entry-author-name" itemprop="name">Wall Street Playboys</span></a></span> <span class="entry-comments-link"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comments">14 Comments</a></span> </p><h1 class="entry-title" itemprop="headline">Avoiding and Going After Tail Events</h1>
+</header><div class="entry-content" itemprop="text"><div class="featured-image"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/"><img alt="Avoiding and Going After Tail Events" class="entry-image" src="https://web.archive.org/web/20200923212053im_/https://wallstreetplayboys.com/wp-content/uploads/2020/06/How-to-chart-a-bell-curve-normal-distribution1-1-150x150.png"/></a></div>
+<p>How many airline CEOs thought they would generate practically zero dollars in revenue and lose billions of dollars in 2020? How many stock market experts could have predicted a massive decline in profits for practically every sector outside of technology, medical/bio-tech and grocery stores? Absolutely zero is the answer if we polled the United States on October of 2019 (we’re not using December of 2019, since a snarky commenter will state that some deep state officials were privy to COVID-19 before December 31). The one benefit of this pandemic has been a return to “importance”. Outside of financials, the pandemic shouldn’t have rattled you if you had your priorities straight. Naturally most do not and realized (quickly) they were not living life in the correct direction. </p>
+<p><strong>A Good Time to Reflect: </strong>As the economy opens up over the next month or so, it would be wise to question your current set of decisions. If you were unhappy during the lockdown, ask serious questions about the “why”. If it’s because you were unable to get drunk with friends, that’s not a good reason. If it’s because you were losing money ask what you can do to be better prepared for one income stream going to zero. If it is because you were neglecting more important people in your life then it’s time to switch up your priorities. </p>
+<p>In fact, we’d say that this was the perfect time to hit the reset button. There is no better time to click reset than now. “Post Pandemic” gives you a perfect excuse to become a ghost to the negative influences in your life. When you’re suddenly gone, you can claim “COVID-19” issues and no one will prod further. It is beautiful. </p>
+<p>To give a clear example on this side of the pond… There is limited value to going out if you can invite people over instead. That is the main conclusion here. We’re starting to side with people who throw house parties and privatize their social lives. It makes more sense as you get older since you’ve sifted through tons of people and already met the major set of winners in your social group. If new ones pop up you’ll hear about them anyway. So the benefits of throwing social events at your home begin to outweigh the costs (clean up costs, organization etc). We’re showing our age with this as no one in their 20s would agree (and they shouldn’t). </p>
+<p><strong>Can’t Control Everything: </strong>If there was a time to read about stoicism, the lock-down was certainly the time to do it. The next best time is now. While you can try to plan for rough time frames (a year to five years or so), predicting anything further than that is quite painful. As we’ve learned you cannot predict everything. You could get a life changing disease, you could get hit by a car walking across the street or you could randomly hit the jackpot with a hot hand at Vegas. Who knows.</p>
+<p><em>What we do know is that you can focus on your reaction and decision making</em>. You can decide to wake up early and get your major tasks done. You can decide what you eat every day. You can decide what you consume everyday (information). You can decide if you’re going to exercise. You can decide who you spend your time with. So on and so forth. Since the lock-down allowed you to isolate for a month, this is the perfect time to write a list of the things you can actually control and throw away the uncontrollable items. </p>
+<p>Another item we researched during the pandemic was “tail risk aversion”. Since most people did not understand the idea of “fat tails” we decided to look into every fat fail issue we could reduce going forward without ruining or seriously impacting our lives. So here is a quick list below:</p>
+<p>First example, do not put all your valuables in a single place. This does not refer to a portfolio (which is obvious) but also refers to items at your place of residence. A single point of failure results in total loss, so storing all your valuables in a single safe is not smart. If the safe is gone you’re toast as well. You should have numerous areas within your home that hold different types of valuables. So if one goes down you don’t suffer a total loss.</p>
+<p>Second example, if you have a family you should never fly with your wife unless you are together with your kids. Why? If you fly together and the plane goes down your kids are the ones who lose everything. If they are over the age of 21 that’s a different story. Fly on different flights to the same place, no change in price. </p>
+<p>Third example, if you plan on <a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/ten-rules-for-getting-started-in-real-estate/">purchasing a home</a> it is smarter to purchase a home with a single story. You may laugh at this but older people, kids and even people in their 40s/50s could fall down the stairs and die. This seems like a joke to anyone under the age of 40 but is something to think about if you’re investing/living in a place long-term. It reduces risk without any serious cost considerations in the USA. </p>
+<p>Fourth example, gated communities provide more security than risk. This is obvious but some believe that living in a gated community leads to crime via targeting. This is only the case if you live in a poorly managed one. In an ideal situation you live in a gated community that is well managed so there are security cameras. The key here is consistent monitoring of the property. As the technology improves over time, you will deter the vast majority of crime since the perpetrators are traceable. </p>
+<p>Fifth example, don’t purposely go out to violent areas. This seems obvious but watching all the riots has really solidified this view for us. We find it laughable when people say <em>“you should do something about it”</em>. This is the same logic that Peace Corps and Teach for America types have. That is… they are fools. If you really want to make a difference we all know that starting a school, creating fund raisers and voting will cause more real change. Anyone who believes that they are “making a difference” by standing in the street for 2 hours while other people rob businesses… is fooling themselves. The people in the Peace Corps are being fooled in the same exact way. If you’re talented you create a value additive business, hire people (so they can feed their families as well!) and then use that money for a greater good. Walking around with some good people, some bad people and some criminals is just a waste of time. Notice, we’ve made zero political statements here since it doesn’t make sense on either side and we don’t vote since the winner of any election doesn’t change a winner’s ability to win at life (as you can see, lots of winning!). Any mass gathering with rioting nearby is just a gamble on your life that is not worth taking. </p>
+<p>Sixth example, stay out of cars when possible. Seriously. While this might contradict the housing argument it really doesn’t. Up to date high rises are well built, are one story in nature and usually have multiple well maintained elevators. It’s much more rare to see a high-rise suddenly collapse when compared to a car crash or an injury from falling down stairs. Again. Look at statistics. Even though people fear airplanes more than cars, that fear is rooted in irrational beliefs vs. facts. Cars are dangerous. </p>
+<p>Seventh, think through natural disasters. There is always potential for natural disasters (hurricanes, earthquakes, tsunamis, tornados… etc.). You can’t avoid them all. That said, you can certainly de-risk them without paying outrageous insurance premiums. An easy way to do this is to purchase in the “nice area” that is away from the major disaster (when possible). If a city has tsunami potential, you don’t want the beach front property even if it’s “cool”. If a city has earthquakes, then you can learn about the major fault lines and simply go away from them. If a city has a volcano for some reason, then you simply map out the area with significant risk… and avoid. </p>
+<p>Eighth, layers of protection for access to important information. We can use crypto as an example here since it’s easy to understand. You don’t want to have a piece of paper sitting in your desk that holds the keys to all of your money. If you lose that… you may be screwed forever if a criminal acquires it. Instead you want to have those keys spread across a few different locations and on top of that have a few different copies. For example, if your pass-phrase is 12 words, you have 6 pieces of engraved metal with six of the words on each of them. A smart reader will understand how this also prevents someone from grabbing one slab and running away. </p>
+<p>Ninth, defend the 2nd amendment. Notice the difference between defending the 2nd amendment and owning a gun. You may not necessarily need one at this moment but you certainly want the option. If you already own one and read this blog chances are you’ve taken intelligent security precautions (making sure no one else can get a hold of it). This is an active item to keep in mind given what has taken place in the USA over the last few weeks. People are certainly unpredictable. </p>
+<p>Tenth, the last one is a consistent choice – decreasing risk of the top 10 causes of death. The top ten are heart disease, tumors, accidents, respiratory disease, stroke, alzheimers, diabetes, the flu, kidney disease and cirrihosis (liver). As you can see, we’ve highlighted the major accidents that can be de-risked (staying out of cars, living in one story homes, not looking for trouble etc.). The other ones take minimal research. Seriously, if you can do the following, you’re good: 1) clean diet, 2) grip strength training, 3) regular blood-work, 4) avoid alcoholism and 5) taking smart precautions around catching the flu and of course… COVID-19. Very few people do this type of basic research since you feel invincible till around your mid 30s. At that point you notice you’re not as athletic/energetic/high-metabolism as you were in your 20s. We gave you the main ones above but please do your own reading. It is not well known that annual blood donations and grip strength can reduce your risk of heart related death by 80-90% (yes we’re serious). The key of course is always the same: consistency. Most will do it for a couple months and give up, the winners make it a life long habit. </p>
+<p>We’re sure we missed a lot but we’re reading more and more on this topic as it seems to be quite important. There is no reason to “stress” about these things, it is more about taking actions that are intelligent over a long time frame. Does it matter if you live in a one story house instead of two? Not really. Does it matter if you walk more vs. getting in a car? No not really. So on and so forth. Once the habit is engrained in your daily life, it is actually healthier for you. <em>Bonus: smart time to practice stealth wealth particularly as it relates to new people in the future. We’ve covered this topic hundreds of times. </em></p>
+<p><strong>Wasted Mental Space: </strong>Many people spend hours and hours worried about things they cannot control. Not only that but they also worry about results for things that do not matter. <span style="text-decoration: underline;"><em>For example:</em></span> worrying about an airplane crashing. If you’re already on the plane there is nothing you can do. So you have to teach your brain that this is reality. It is simply something you cannot control. <span style="text-decoration: underline;"><em>Another example:</em></span> worrying about the opinion of 97% of people. The vast majority are not that bright (a statistical fact). So trying to win them over is foolish and on top of that, worrying about their opinions = reduction in intelligent thought processes. Unfortunately, or fortunately, we’ve reduced the number of things we worry about to almost nothing (vast majority of issues are out of our control). So. This has led to a pretty calm mind. The majority spend countless hours living in a *stressed out* state of mind which impairs their decision making and reduces the length of their lives. </p>
+<p><strong>Active Positive Tail Events: </strong>The events of 2020 typically result in “risk aversion” thoughts. So we have to end on a positive note and highlight ways to take on risk that results in significant outperformance with little downside. Below is a short list.</p>
+<p>First, Cryptocurrency investing. Even if you think it is worth $0 in the future it would be foolish to own $0. This is because the asymmetric nature of the investment is high. If you invest $1,000 and lose it all, your life is not going to change. If it goes up and really becomes digital gold, you’re looking at $400,000 per coin (yes an insane figure but the point is clear).</p>
+<p>Second, starting an online business. Even if you are risk averse you can go through the standard: <a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/how-to-make-money-online-starting-today/">time for money exchange -&gt; selling other people’s products -&gt; selling your own product</a>. The reason this is an asymmetric risk is the same… the max you can lose is a few thousand dollars if you have a skill based service to offer. As you learn how to earn online, a $50,000 investment will not be a lot of money (to you relative to net worth) and the upside is a million plus per year. <em>Important note: please do not read this and assume that crypto is better than an online business. It isn’t even close, a business is better since the money is <a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/the-20-laws-for-online-product-income-success/">*recurring* and can last decades</a>. An increase in prices for crypto is not only low probability but also inconsistent. </em></p>
+<p>Third, always selling/applying. Colleges, Jobs and Dating all apply to this one. There is quite literally no loss if you fail (okay the small application fee for college). Generally speaking, you should be selling/applying for something on a daily basis. The only exception is if you’re wasting someone’s time (IE. cold emailing/“networking” when you have nothing to offer). In that case you are wasting their time and burned a bridge. Assuming that you have something valuable to offer… go ahead and swing. Even if the chances are slim (under 5%) you don’t lose anything. </p>
+<p>Fourth, try to be in the middle of the pack -relative term. This seems counter intuitive at first since most people think they are the best and should always be “#1”. Unfortunately, in the real world, you’re going to find someone who is better than you at practically everything. So you want to consistently surround yourself by people who are making you better. If you surpass them, you constantly look for higher and higher levels. If you are the best person in the room at all times… you’re <em>decreasing</em> your chances of making it to the next level. In order for you to move up in the world, you have to surround yourself with people who are ahead of you. This is similar to playing a sport, the only way to get better is to go up against people who are better than you. </p>
+<p>Fifth, stay long the outliers. <a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/investing-lessons-from-the-tesla-short-disaster/">We’ve posted about Tesla before</a> and sure there will be days where it is down quite a bit. That said, when you want to invest with low percentages of money, choosing the smartest people in the world is usually a good decision. Elon Musk is arguably the smartest person on the planet. Steve Jobs had a similar “aura” about him as he successfully turned Apple around. A good way to find these individuals is to follow the cults. People who are seen as “crazy” are usually geniuses if their background is riddled with low probability success stories. If someone is deemed “crazy” this is actually a great sign as most people can only think in binary ways (either he/she agrees or disagrees with me). </p>
+<p><strong>Concluding Remarks: </strong>Tail events are rare, under 2.5%. The key is to expose yourself to a bunch of the positive ones while simultaneously making decisions that decrease the risk of a negative tail event. If you look hard at tail events, you’ll realize that you’re missing out on hundreds per year. Most people avoid the positive tails as their egos get in the way (you will lose much more than you win since you’re going after something with low probabilities). Over time, the math simply catches up to you and you’ll benefit from a positive tail event. </p>
+<p><strong>Newer Readers: </strong>For those that are unfamiliar with our blog we have three high quality products in order: <a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/efficiency/">1) Efficiency</a>, <a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/triangle-investing/">2) Triangle Investing</a> and 3) <a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/spending/">Spending for Maximum Return</a>. In order, you learn how to make a good amount of money (a million liquid within 10 years or so), how to correctly invest it and finally how we’d avoid blowing it all with intelligent spending and PED use to improve quality of life. <strong>We hold Q&amp;As 1-2x a month for purchasers only. </strong></p>
+<div class="addtoany_share_save_container addtoany_content addtoany_content_bottom"><div class="a2a_kit a2a_kit_size_32 addtoany_list" data-a2a-title="Avoiding and Going After Tail Events" data-a2a-url="https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/"><a class="a2a_button_facebook" href="https://web.archive.org/web/20200923212053/https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fwallstreetplayboys.com%2Favoiding-and-going-after-tail-events%2F&amp;linkname=Avoiding%20and%20Going%20After%20Tail%20Events" rel="nofollow noopener" target="_blank" title="Facebook"></a><a class="a2a_button_twitter" href="https://web.archive.org/web/20200923212053/https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fwallstreetplayboys.com%2Favoiding-and-going-after-tail-events%2F&amp;linkname=Avoiding%20and%20Going%20After%20Tail%20Events" rel="nofollow noopener" target="_blank" title="Twitter"></a><a class="a2a_dd addtoany_share_save addtoany_share" href="https://web.archive.org/web/20200923212053/https://www.addtoany.com/share"></a></div></div><!--<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/"
+    dc:identifier="https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/"
+    dc:title="Avoiding and Going After Tail Events"
+    trackback:ping="https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/trackback/" />
+</rdf:RDF>-->
+</div><footer class="entry-footer"><p class="entry-meta"><span class="entry-categories">Filed Under: <a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/category/personal-finance/" rel="category tag">Personal Finance</a></span> </p></footer></article><div class="entry-comments" id="comments"><h3>Comments</h3><ol class="comment-list">
+<li class="comment even thread-even depth-1" id="comment-92696">
+<article id="article-comment-92696" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">David</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-08T15:59:58-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92696" itemprop="url">June 8, 2020 at 3:59 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>I got laid off in March. I emptied out my vacation fund, severance pay and unemployment and loaded it out on bitcoin. Then it nearly doubled. </p>
+<p>As a 50 year old “boomer” who discovered this blog way too late and took one piece of advice. it’s crazy. I just didn’t think this online money stuff actually worked.</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to David" class="comment-reply-link" data-belowelement="article-comment-92696" data-commentid="92696" data-postid="17181" data-replyto="Reply to David" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92696#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-92697">
+<article id="article-comment-92697" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/36d6dbcab62431e3678724139ee8674d?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">John</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-08T16:10:27-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92697" itemprop="url">June 8, 2020 at 4:10 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Something to add about health: For heart disease and some cancers, hereditary factors are larger indicators of risk than lifestyle. Definitely worth it to find out what your parents, grandparents, etc died from and get checked regularly if something stands out.</p>
+<p>The grip strength relation to heart disease was new to me. Thanks for a great article.</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to John" class="comment-reply-link" data-belowelement="article-comment-92697" data-commentid="92697" data-postid="17181" data-replyto="Reply to John" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92697#respond" rel="nofollow">Reply</a></div>
+</article>
+<ul class="children">
+<li class="comment even depth-2" id="comment-92722">
+<article id="article-comment-92722" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">someguy1776</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-10T00:36:37-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92722" itemprop="url">June 10, 2020 at 12:36 am</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Someone commented here before about taking your genetic data from a service like 23andme and putting it into some open source website, then it gives you a much more detailed health risk overview than 23andme health.</p>
+<p>Can’t remember what it was called, but shouldn’t be too hard to find via Google.</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to someguy1776" class="comment-reply-link" data-belowelement="article-comment-92722" data-commentid="92722" data-postid="17181" data-replyto="Reply to someguy1776" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92722#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-92700">
+<article id="article-comment-92700" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">Nick</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-08T17:05:26-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92700" itemprop="url">June 8, 2020 at 5:05 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Great post. After reading your books I can tell you guys definitely prefer the major cities. Since you believe that an internet business is of primary importance and is not location dependent, If somebody has reached 40 and prefers a rural living situation, any reason not to pack up and leave the major cities?</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to Nick" class="comment-reply-link" data-belowelement="article-comment-92700" data-commentid="92700" data-postid="17181" data-replyto="Reply to Nick" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92700#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-92701">
+<article id="article-comment-92701" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/c1b68aaa127a631b5b722f40cb9b9c91?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">Nimble Navigator</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-08T17:12:15-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92701" itemprop="url">June 8, 2020 at 5:12 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>WSPs once again produces yet another beautiful gem! </p>
+<p>The lockdown has been a blessing for me in a massive way. I love being able to invest the hour I would usually have to invest in getting ready in the morning and showering on things like working out, going for a run, and maybe even working a bit on my side hustle (which is not working out well right now but hey, try and fail!). I am very grateful to be employed as well (knock on wood!). </p>
+<p>Meanwhile, one of my friends keeps bitching whenever I hang out with him about the lockdown and how much it sucks that bars and clubs are not open. I am frustrated at times too because he got let go but is on unemployment which he finds pays more than his SDR gig would. I like a lot of aspects about him as a friend and he is an efficient guy who comes from money but his bitching is just wearing on me.</p>
+<p>What 2020 has done is truly help me evaluate what matters. I live in NYC and my lease expires in July and tbh, I do not want to leave this city. I might just go for a cheaper and quieter spot in Manhattan (Yorkville or UES or UWS) because I have fallen in love with the city after moving from shitty Atlanta which was full of “average” people (aka losers). Ideally look for a 6 month lease or so, see how it all plays out. Company has us working remote till end of 2020 but in 2021, we might need to come back into the office so I cannot just up and leave either.</p>
+<p>I am interested in seeing in the future and how the trends play out for movement of people. I moved to NYC to grow, meet cool people, amazing women, parties, networking opportunities, and because of my career. People in Manhattan are so driven as well and don’t BS around like you would get in a city like Atlanta (where everyone is a passive aggressive bitch that wastes your time).</p>
+<p>Either way, predict as much as possible but be NIMBLE. Know where it is heading. Maybe one day we get smaller towns and smaller cities that specialize in what NYC provides (being single, partying, dating, drinking, career, etc.).</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to Nimble Navigator" class="comment-reply-link" data-belowelement="article-comment-92701" data-commentid="92701" data-postid="17181" data-replyto="Reply to Nimble Navigator" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92701#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-92702">
+<article id="article-comment-92702" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/943fe1c723cd3f745f5c134dffd96260?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">Tim</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-08T17:35:00-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92702" itemprop="url">June 8, 2020 at 5:35 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Nice post boys. Thank you so much for updating us and posting so frequently. The only way that I have been affected by this lockdown is ALL GYMS BEING CLOSED and finding work out equipment has been very difficult. Other than that no complaints.</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to Tim" class="comment-reply-link" data-belowelement="article-comment-92702" data-commentid="92702" data-postid="17181" data-replyto="Reply to Tim" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92702#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-92705">
+<article id="article-comment-92705" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/4b384b9e22122cecd43552203114bd47?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">Renter Guy</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-08T18:45:57-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92705" itemprop="url">June 8, 2020 at 6:45 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Absolutely beautiful post. Maximal paranoia and maximal risk loving. You bring a barbell approach to life!</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to Renter Guy" class="comment-reply-link" data-belowelement="article-comment-92705" data-commentid="92705" data-postid="17181" data-replyto="Reply to Renter Guy" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92705#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-92707">
+<article id="article-comment-92707" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">Upper</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-08T20:19:00-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92707" itemprop="url">June 8, 2020 at 8:19 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>You guys think recent events will make most ppl avoid entrepreneurship? It’s crazy, when I talk to older peeps (baby boomers, generation X), they used to be way more inclined to open new businesses, even during recessions/crisis. Even way you needed a lot of capital upfront, they found a way..</p>
+<p>Now, even though the Internet has practically eliminated the need to have a lot of capital to start a biz (ie. freelancing online), the rate of entrepreneurship from Millennials/Gen Z is small and declining. Biggest reason seem to be they’re afraid of “failure”, wtf lol.</p>
+<p>Your thoughts? (I know its not Q&amp;A, but it has to do a lot with this post and *risk avoidance*)</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to Upper" class="comment-reply-link" data-belowelement="article-comment-92707" data-commentid="92707" data-postid="17181" data-replyto="Reply to Upper" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92707#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-92712">
+<article id="article-comment-92712" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/0c9ed451b1aa24fcac48d5bead19e03d?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name"><a class="comment-author-link" href="https://web.archive.org/web/20200923212053/https://lifemathmoney.com/" itemprop="url" rel="external nofollow">LifeMathMoney</a></span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-09T02:29:17-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92712" itemprop="url">June 9, 2020 at 2:29 am</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Great article, as always. WSPs never disappoints.</p>
+<p>I’ll add this to tail risk aversion:</p>
+<p>Don’t do business with only one bank.</p>
+<p>Banks rarely go down, but when they do, you don’t want to be cleaned out.</p>
+<p>A few clients learned this the hard way when a decently sized bank went down in India this year.</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to LifeMathMoney" class="comment-reply-link" data-belowelement="article-comment-92712" data-commentid="92712" data-postid="17181" data-replyto="Reply to LifeMathMoney" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92712#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-92720">
+<article id="article-comment-92720" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/41c372893bc96da0549d2f9376be2bbc?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">Robert</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-09T18:18:46-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92720" itemprop="url">June 9, 2020 at 6:18 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Heads up, Lisa Su of AMD has a cult like following in the PC hardware world and is worth paying attention to.</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to Robert" class="comment-reply-link" data-belowelement="article-comment-92720" data-commentid="92720" data-postid="17181" data-replyto="Reply to Robert" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92720#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-92730">
+<article id="article-comment-92730" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/103fdf678e8841da4b5af72d9703267d?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">Marco</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-10T21:23:44-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92730" itemprop="url">June 10, 2020 at 9:23 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Very nice post, thank you.</p>
+<p>I think grip strength is just an indicator of good health. Just increasing grip strength by doing some specific grip exercises (instead of doing more general exercises) won’t increase your life expectancy in my opinion.</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to Marco" class="comment-reply-link" data-belowelement="article-comment-92730" data-commentid="92730" data-postid="17181" data-replyto="Reply to Marco" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92730#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-92743">
+<article id="article-comment-92743" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/3fcaa694cb814acda2e1a2aad5b7c554?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">Anonymous</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-06-12T17:46:03-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-92743" itemprop="url">June 12, 2020 at 5:46 pm</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Insightful post, interesting to see how others are thinking. Could agree with most but not with everything. If you are starting to worry about loosing assets due to an accident and can’t pass things along start to think about and setting up a Irrevocable trust and protecting assets through entity structuring. At times like these maybe your business fails and you decided to walk away, make sure they can’t come after your personal assets.If you pass away in an accident and kids are trustees then no biggie in transfer of assets.</p>
+<p>The house thing, when I was buying property to live in and then turn into rentals I wish I had looked at property that had more bedrooms and utilized the lot’s square footage more effectively(eg muti-level more beds and bathrooms) for obvious reasons that they tend to be able to be rented out for more in comparison to a smaller house in the same area. While the dangers of falling in your beloved house is real if you had multi story house, considering that if you residence is paid off you probably could rent that out and use the income to rent a place that is more fitting of your current situation (smaller house, no stairs or need to live close to a hospital). </p>
+<p>The car debate, having grown up in a very metropolitan area I did not have the need to learn to drive until I was 18. Shortly after I got into a bad car accident in college that traumatized me and kept me from driving for many years. I had the means to choose to always live close to work and entertainment where I always had the option to take a taxi, public transit, or even walk. I still drove occasionally but would avoid the freeway as much as possible. However if you live in America it just becomes a skill that you need to learn, as I started to do more domestic travel for the company I worked at I had to get comfortable with landing at an airport and picking up a rental car to drive to the job site. Because of my accident I am very hyper alert of my surrounding which can make it an exhausting task, but once I got comfortable driving again it really did open so much more of the country to me. Where I live now I maintain two residences, one in the city and one an hour and a half away in the country. I don’t have to drive regularly to commute for work so I just choose not to drive during rush hour. I don’t drive on Friday and weekend nights when I know that the bar crowd is out and about and DUI are on the roads. Can’t eliminate all risk in driving but as you learn about it you can determine when to plan your trip. </p>
+<p>The car is just a tool, tools can be dangerous. I have a low key commuter car that is modern that has most of the new safety equipment and a new truck with luxury trim. The right tool for the job. Commuter car has some dings and as been broken into (happens eventually when you live in the city) when it wears out I will just get a new one, the truck takes me up to mountains and hauls recreational equipment and sits higher giving me a better view of road conditions. Not emotionally attached to any of these things, I bought them for a specific purpose. In fact once the commuter car is ready to retire I probably would just lease a vehicle as I don’t desire worrying about he maintenance and don’t really care to waste my time playing the how much can I sell the car on criagslist for. Thinking of it as a tool that depreciates and how much value I put on my time and life I would like to be able to drive the most modern car with all the safety options whenever possible. The monetary difference between not owning vs leasing can be made up with my side business. Also leases are 100% tax deductible, if the cash flow can support it just lease it through your business. </p>
+<p>Finally you are no safer being the passenger in the back seat of some Uber as opposed to driving yourself. These drivers aren’t exactly being vetted for their skills as being a “professional driver”, just people put into a position to earn some extra money.  You have no way of knowing if this guy just smoked a blunt and decided he need to make an extra $80 to pick up another sack so may as well try to pick up a Uber customer. I agree and know first hand getting into a car is a big risk, but if you are going to get the most out of living in America you need to be able to drive yourself. </p>
+<p>Other than that little rant agree with everything else.</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to " class="comment-reply-link" data-belowelement="article-comment-92743" data-commentid="92743" data-postid="17181" data-replyto="Reply to " data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=92743#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-93138">
+<article id="article-comment-93138" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/d37f64296a7fc7a72e1d66a814aa1977?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">Cj</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-07-09T01:52:46-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-93138" itemprop="url">July 9, 2020 at 1:52 am</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>“stay out of cars.  Seriously”</p>
+<p>::Zipcar ad::</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to Cj" class="comment-reply-link" data-belowelement="article-comment-93138" data-commentid="93138" data-postid="17181" data-replyto="Reply to Cj" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=93138#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-93239">
+<article id="article-comment-93239" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+<header class="comment-header">
+<p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+<img alt="Avatar" class="avatar avatar-48wp-user-avatar wp-user-avatar-48 alignnone photo avatar-default" height="48" src="https://web.archive.org/web/20200923212053im_/https://secure.gravatar.com/avatar/d10ca8d11301c2f4993ac2279ce4b930?s=48&amp;d=mm&amp;r=g" width="48"/><span class="comment-author-name" itemprop="name">T</span> <span class="says">says</span> </p>
+<p class="comment-meta"><time class="comment-time" datetime="2020-07-21T09:32:54-04:00" itemprop="datePublished"><a class="comment-time-link" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#comment-93239" itemprop="url">July 21, 2020 at 9:32 am</a></time></p> </header>
+<div class="comment-content" itemprop="text">
+<p>Please, Musk is a fraud and a charlatan.</p>
+</div>
+<div class="comment-reply"><a aria-label="Reply to T" class="comment-reply-link" data-belowelement="article-comment-93239" data-commentid="93239" data-postid="17181" data-replyto="Reply to T" data-respondelement="respond" href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/?replytocom=93239#respond" rel="nofollow">Reply</a></div>
+</article>
+</li><!-- #comment-## -->
+</ol></div> <div class="comment-respond" id="respond">
+<h3 class="comment-reply-title" id="reply-title">Leave a Reply <small><a href="/web/20200923212053/https://wallstreetplayboys.com/avoiding-and-going-after-tail-events/#respond" id="cancel-comment-reply-link" rel="nofollow" style="display:none;">Cancel reply</a></small></h3><form action="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/wp-comments-post.php" class="comment-form" id="commentform" method="post" novalidate=""><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea cols="45" id="comment" maxlength="65525" name="comment" required="required" rows="8"></textarea></p><p class="comment-form-author"><label for="author">Name</label> <input id="author" maxlength="245" name="author" size="30" type="text" value=""/></p>
+<p class="comment-form-email"><label for="email">Email</label> <input aria-describedby="email-notes" id="email" maxlength="100" name="email" size="30" type="email" value=""/></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" maxlength="200" name="url" size="30" type="url" value=""/></p>
+<p class="form-submit"><input class="submit" id="submit" name="submit" type="submit" value="Post Comment"/> <input id="comment_post_ID" name="comment_post_ID" type="hidden" value="17181"/>
+<input id="comment_parent" name="comment_parent" type="hidden" value="0"/>
+</p><p style="display: none;"><input id="akismet_comment_nonce" name="akismet_comment_nonce" type="hidden" value="cfa9e5f050"/></p><p style="display: none;"><input id="ak_js" name="ak_js" type="hidden" value="140"/></p></form> </div><!-- #respond -->
+</main><aside aria-label="Primary Sidebar" class="sidebar sidebar-primary widget-area" itemscope="" itemtype="https://schema.org/WPSideBar" role="complementary"><section class="widget widget_text" id="text-3"><div class="widget-wrap"> <div class="textwidget"><a href="https://web.archive.org/web/20200923212053/http://wallstreetplayboys.com/efficiency/"><img src="https://web.archive.org/web/20200923212053im_/http://wallstreetplayboys.com/wp-content/uploads/2017/07/WSPs-Efficiency-700x700.png"/></a></div>
+</div></section>
+<section class="widget enews-widget" id="enews-ext-2"><div class="widget-wrap"><div class="enews"><h4 class="widget-title widgettitle">Advice From Real Wall Street Professionals</h4>
+<p>Subscriptions are for *future* products/services only. Your email is never shared. </p>
+<p>Thanks!</p>
+<form action="https://web.archive.org/web/20200923212053/http://eepurl.com/bapHMj" id="subscribeenews-ext-2" method="post" name="enews-ext-2" onsubmit="if ( subbox1.value == 'First Name') { subbox1.value = ''; } if ( subbox2.value == 'Last Name') { subbox2.value = ''; }" target="_blank">
+<label class="screenread" for="subbox">E-Mail Address</label><input id="subbox" name="EMAIL" placeholder="E-Mail Address" required="required" type="email" value=""/>
+<input id="subbutton" type="submit" value="Go"/>
+</form>
+</div></div></section>
+<section class="widget widget_rotatingtweets_widget" id="rotatingtweets_widget-2"><div class="widget-wrap"><h4 class="widget-title widgettitle">Street Tweets</h4>
+<div class="rotatingtweets rotatingtweets_format_0" data-cycle-auto-height="calc" data-cycle-easing="swing" data-cycle-fx="scrollUp" data-cycle-log="false" data-cycle-pause-on-hover="true" data-cycle-slides="div.rotatingtweet" data-cycle-speed="1000" data-cycle-timeout="4000" id="rotatingtweets_4000_scrollUp_1000_5f6bb511e3bdb">
+<div class="rotatingtweet">
+<p class="rtw_main">When we write a thoughtful post (like the latest) the comments section gets 20x better.
+
+Way better than Q&amp;As. Have to figure that one out</p></div>
+<div class="rotatingtweet" style="display:none">
+<p class="rtw_main">The future of money and how to use it
+
+<a class="rtw_url_link" href="https://web.archive.org/web/20200923212053/https://t.co/A5FM5jFnwn" title="https://wallstreetplayboys.com/the-future-of-money-and-how-to-use-it/">wallstreetplayboys.com/the-fu…</a></p></div>
+</div>
+<div class="rtw_follow follow-button"><a class="twitter-follow-button" data-lang="en" data-show-count="false" href="https://web.archive.org/web/20200923212053/https://twitter.com/@WallStPlayboys" title="Follow @WallStPlayboys">Follow @WallStPlayboys</a></div></div></section>
+<section class="widget widget_text" id="text-4"><div class="widget-wrap"><h4 class="widget-title widgettitle">Triangle</h4>
+<div class="textwidget"><p> </p>
+<p><a href="https://web.archive.org/web/20200923212053/http://wallstreetplayboys.com/triangle-investing"><img src="https://web.archive.org/web/20200923212053im_/http://wallstreetplayboys.com/wp-content/uploads/2018/01/Triangle-Investing-3d.jpg"/></a></p>
+</div>
+</div></section>
+<section class="widget widget_text" id="text-6"><div class="widget-wrap"><h4 class="widget-title widgettitle">Spending</h4>
+<div class="textwidget"><p> </p>
+<p><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/spending"><img src="https://web.archive.org/web/20200923212053im_/https://wallstreetplayboys.com/wp-content/uploads/2020/01/Spending-For-Maximum-Return-3D.jpg"/></a></p>
+</div>
+</div></section>
+<section class="widget widget_text" id="text-8"><div class="widget-wrap"><h4 class="widget-title widgettitle">Disclosures</h4>
+<div class="textwidget"><p> </p>
+<p class="p1">Links to products contain affiliate links. If you make a purchase after clicking a link, we may receive a commission. This commission comes at no charge to you.</p>
+<p class="p1"><a href="https://web.archive.org/web/20200923212053/https://wallstreetplayboys.com/start-here/">For our Privacy Policy Click Here.</a></p>
+</div>
+</div></section>
+</aside></div></div></div>
+
+
+</body></html>
+<!-- Dynamic page generated in 1.024 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2020-09-23 16:52:10 -->
+<!-- super cache --><!--
+     FILE ARCHIVED ON 21:20:53 Sep 23, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:40:11 Jun 24, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  exclusion.robots: 0.263
+  PetaboxLoader3.resolve: 58.678
+  LoadShardBlock: 116.732 (3)
+  RedisCDXSource: 6.973
+  esindex: 0.048
+  exclusion.robots.policy: 0.244
+  CDXLines.iter: 25.172 (3)
+  captures_list: 154.271
+  PetaboxLoader3.datanode: 132.273 (4)
+  load_resource: 104.477
+-->
