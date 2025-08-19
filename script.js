@@ -13,16 +13,15 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // 🎨 Tailwind color classes
     const colors = [
-  "bg-red-700 hover:bg-red-800 text-white",
-  "bg-blue-700 hover:bg-blue-800 text-white",
-  "bg-green-700 hover:bg-green-800 text-white",
-  "bg-yellow-700 hover:bg-yellow-800 text-white",
-  "bg-purple-700 hover:bg-purple-800 text-white",
-  "bg-pink-700 hover:bg-pink-800 text-white",
-  "bg-indigo-700 hover:bg-indigo-800 text-white",
-  "bg-teal-700 hover:bg-teal-800 text-white",
-];
-
+      "bg-red-700 hover:bg-red-800 text-white",
+      "bg-blue-700 hover:bg-blue-800 text-white",
+      "bg-green-700 hover:bg-green-800 text-white",
+      "bg-yellow-700 hover:bg-yellow-800 text-white",
+      "bg-purple-700 hover:bg-purple-800 text-white",
+      "bg-pink-700 hover:bg-pink-800 text-white",
+      "bg-indigo-700 hover:bg-indigo-800 text-white",
+      "bg-teal-700 hover:bg-teal-800 text-white",
+    ];
 
     // 🧩 Create filter buttons with different colors
     allTags.forEach((tag, index) => {
@@ -71,13 +70,18 @@ document.addEventListener("DOMContentLoaded", async function () {
         grouped[year].forEach((article) => {
           const li = document.createElement("li");
           li.innerHTML = `
-              <a href="articles/${article.file}" class="block hover:underline">
-                <span class="text-lg font-semibold">${article.title}</span>
-                <span class="block text-sm text-[#555]">${article.date}</span>
-                <span class="text-xs text-gray-500 italic">${(
-                  article.tags || []
-                ).join(", ")}</span>
-              </a>`;
+  <a href="articles/${
+    article.file
+  }" class="block hover:underline p-2 sm:p-3 rounded hover:bg-gray-100 dark:hover:bg-gray-700">
+    <span class="block text-base sm:text-lg font-semibold">${
+      article.title
+    }</span>
+    <span class="block text-xs sm:text-sm text-[#555]">${article.date}</span>
+    <span class="block text-xs sm:text-sm text-gray-500 italic">${(
+      article.tags || []
+    ).join(", ")}</span>
+  </a>`;
+
           list.appendChild(li);
         });
 
@@ -88,7 +92,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     // ❌ Removed initial render
-    // renderArticles();  
+    // renderArticles();
     // 👉 Now homepage shows only tags
   } catch (error) {
     console.error("Error loading articles:", error);
