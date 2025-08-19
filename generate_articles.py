@@ -12,6 +12,6 @@ for file in os.listdir(articles_dir):
 
 # Save to JSON
 with open("articles.json", "w") as f:
-    json.dump(articles, f, indent=4)
+    json.dump(articles,f, indent=4)
 
 print("Generated articles.json successfully!")
