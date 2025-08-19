@@ -11,15 +11,32 @@ document.addEventListener("DOMContentLoaded", async function () {
       new Set(articles.flatMap((article) => article.tags || []))
     ).sort();
 
-    // 🧩 Create filter buttons
-    allTags.forEach((tag) => {
+    // 🎨 Tailwind color classes
+    const colors = [
+  "bg-red-700 hover:bg-red-800 text-white",
+  "bg-blue-700 hover:bg-blue-800 text-white",
+  "bg-green-700 hover:bg-green-800 text-white",
+  "bg-yellow-700 hover:bg-yellow-800 text-white",
+  "bg-purple-700 hover:bg-purple-800 text-white",
+  "bg-pink-700 hover:bg-pink-800 text-white",
+  "bg-indigo-700 hover:bg-indigo-800 text-white",
+  "bg-teal-700 hover:bg-teal-800 text-white",
+];
+
+
+    // 🧩 Create filter buttons with different colors
+    allTags.forEach((tag, index) => {
       const button = document.createElement("button");
       button.textContent = tag;
-      button.className =
-        "px-3 py-1 border border-gray-500 rounded hover:bg-black hover:text-white";
+
+      // Pick color in sequence or wrap around if more tags than colors
+      const colorClass = colors[index % colors.length];
+      button.className = `px-3 py-1 rounded text-sm font-medium ${colorClass}`;
+
       button.addEventListener("click", () => {
         renderArticles(tag);
       });
+
       filterBox.appendChild(button);
     });
 
@@ -70,8 +87,9 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
     }
 
-    // 👇 Initial render (no filter)
-    renderArticles();
+    // ❌ Removed initial render
+    // renderArticles();  
+    // 👉 Now homepage shows only tags
   } catch (error) {
     console.error("Error loading articles:", error);
   }
