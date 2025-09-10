@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async function () {
           li.innerHTML = `
   <a href="articles/${
     article.file
-  }" class="block hover:underline p-2 sm:p-3 rounded hover:bg-gray-100 dark:hover:bg-gray-700">
+  }" class="block hover:underline p-2 sm:p-3 rounded hover:bg-gray-100 dark:hover:bg-sky-500">
     <span class="block text-base sm:text-lg font-semibold">${
       article.title
     }</span>
